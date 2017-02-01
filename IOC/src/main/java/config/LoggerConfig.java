@@ -3,9 +3,16 @@ package config;
 import classes.ClassWrapper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowire;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
+
+import javax.annotation.Resource;
+import java.io.FileReader;
 
 
 /**
@@ -15,7 +22,7 @@ import org.springframework.context.annotation.Scope;
 public class LoggerConfig {
 
     //Сам логер
-    @Bean()
+    @Bean(autowire = Autowire.BY_TYPE)
     @Scope("prototype")
 
     public Log log(ClassWrapper classWrapper){

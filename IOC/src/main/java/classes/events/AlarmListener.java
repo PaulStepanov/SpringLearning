@@ -5,7 +5,9 @@ import org.apache.commons.logging.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AlarmListener {
     private String text;
 
