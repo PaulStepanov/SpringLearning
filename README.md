@@ -1,6 +1,11 @@
 # SpringLearning
 Personal repository for tries while learning Spring framework.
 
+##VkStuffApp
+capabilities:
+* Get Subscriptions list of user by id and show with web interface
+* Sort subscriptions
+
 
 ------------------
 Resources:
