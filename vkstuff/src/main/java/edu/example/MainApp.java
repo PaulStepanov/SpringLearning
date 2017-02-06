@@ -1,6 +1,6 @@
 package edu.example;
 
-import edu.example.confings.MainConfig;
+import edu.example.confings.WebMvcConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -16,6 +16,6 @@ public class MainApp {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext();
         context.getEnvironment().setActiveProfiles("dev","test");
-        context.register(MainConfig.class);
+        context.register(WebMvcConfig.class);
     }
 }

@@ -6,7 +6,7 @@ public class Subscription {
     private boolean is_closed;
     private boolean is_admin;
     private boolean is_member;
-    private String photo_200;
+    private String photo;
 
     public String getId() {
         return id;
@@ -53,12 +53,12 @@ public class Subscription {
         return this;
     }
 
-    public String getPhoto_200() {
-        return photo_200;
+    public String getPhoto() {
+        return photo;
     }
 
-    public Subscription setPhoto_200(String photo_200) {
-        this.photo_200 = photo_200;
+    public Subscription setPhoto(String photo) {
+        this.photo = photo;
         return this;
     }
 }
