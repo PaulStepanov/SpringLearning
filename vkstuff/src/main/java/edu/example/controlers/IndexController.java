@@ -1,6 +1,6 @@
 package edu.example.controlers;
 
-import edu.example.logic.SubscritionAPIManager;
+import edu.example.logic.SubscritionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/",method = RequestMethod.GET)
 public class IndexController {
     @Autowired
-    public SubscritionAPIManager subscritionAPIManager;
+    public SubscritionManager subscritionAPIManager;
     @RequestMapping("/")
     public String index(ModelMap modelMap) {
         return "index";
