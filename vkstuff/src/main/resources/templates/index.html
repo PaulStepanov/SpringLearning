@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Vk stuff</title>
-    <link rel="stylesheet" th:src="@{/resources/styles/indexstyle.css}"/>
+    <meta charset="UTF-8"/>
+    <title>Welocme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 <body>
-<table>
-    <tr th:each="subscription :${subscriptions}">
-        <td th:text="${subscription.getId()}"></td>
-        <td th:text="${subscription.getName()}"></td>
-        <td th:text="${subscription.getPhoto()}"></td>
-    </tr>
-</table>
+<form id="idForm">
+    <div class="form-group idForm">
+        <label for="userID">Email address</label>
+        <input type="text" class="form-control" id="userID"  name="id" placeholder="UserID"/>
+    </div>
+    <button type="submit" id="subm" class="btn btn-default ">Submit</button>
+</form>
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="resources/js/indexjs.js"></script>
 </body>
 </html>

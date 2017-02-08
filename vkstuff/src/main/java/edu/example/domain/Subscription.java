@@ -7,6 +7,16 @@ public class Subscription {
     private boolean is_admin;
     private boolean is_member;
     private String photo;
+    private String screen_name;
+
+    public String getScreen_name() {
+        return screen_name;
+    }
+
+    public Subscription setScreen_name(String screen_name) {
+        this.screen_name = screen_name;
+        return this;
+    }
 
     public String getId() {
         return id;

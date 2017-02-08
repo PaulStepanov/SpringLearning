@@ -1,12 +1,9 @@
 <component name="libraryTable">
-  <library name="Thymeleaf-2.1.4" type="thymeleaf">
-    <properties version="2.1.4" />
+  <library name="Thymeleaf-2.1.4">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/RESTHelloWorld/lib/thymeleaf-2.1.4.RELEASE.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/RESTHelloWorld/lib/thymeleaf-2.1.4.RELEASE-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/RESTHelloWorld/lib/thymeleaf-2.1.4.RELEASE-sources.jar!/" />
     </SOURCES>

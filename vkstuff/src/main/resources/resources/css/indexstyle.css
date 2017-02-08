@@ -1,0 +1,15 @@
+table{
+    background-color: blue;
+}
+body{
+    font-size: 29px;
+}
+.com_block{
+    min-height: 200px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+
+}
+.com_block:hover{
+    outline: 2px solid black;
+}

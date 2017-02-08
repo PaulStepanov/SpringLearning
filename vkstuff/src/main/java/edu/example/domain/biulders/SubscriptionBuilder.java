@@ -1,4 +1,4 @@
-package edu.example.domain.builders;
+package edu.example.domain.biulders;
 
 import edu.example.domain.Subscription;
 
@@ -9,6 +9,7 @@ public final class SubscriptionBuilder {
     private boolean is_admin;
     private boolean is_member;
     private String photo;
+    private String screen_name;
 
     private SubscriptionBuilder() {
     }
@@ -17,38 +18,39 @@ public final class SubscriptionBuilder {
         return new SubscriptionBuilder();
     }
 
-    public SubscriptionBuilder id(String id) {
+    public SubscriptionBuilder withId(String id) {
         this.id = id;
         return this;
     }
 
-    public SubscriptionBuilder name(String name) {
+    public SubscriptionBuilder withName(String name) {
         this.name = name;
         return this;
     }
 
-    public SubscriptionBuilder is_closed(boolean is_closed) {
+    public SubscriptionBuilder withIs_closed(boolean is_closed) {
         this.is_closed = is_closed;
         return this;
     }
 
-    public SubscriptionBuilder is_admin(boolean is_admin) {
+    public SubscriptionBuilder withIs_admin(boolean is_admin) {
         this.is_admin = is_admin;
         return this;
     }
 
-    public SubscriptionBuilder is_member(boolean is_member) {
+    public SubscriptionBuilder withIs_member(boolean is_member) {
         this.is_member = is_member;
         return this;
     }
 
-    public SubscriptionBuilder photo(String photo) {
+    public SubscriptionBuilder withPhoto(String photo) {
         this.photo = photo;
         return this;
     }
 
-    public SubscriptionBuilder but() {
-        return aSubscription().id(id).name(name).is_closed(is_closed).is_admin(is_admin).is_member(is_member).photo(photo);
+    public SubscriptionBuilder withScreen_name(String screen_name) {
+        this.screen_name = screen_name;
+        return this;
     }
 
     public Subscription build() {
@@ -59,6 +61,7 @@ public final class SubscriptionBuilder {
         subscription.setIs_admin(is_admin);
         subscription.setIs_member(is_member);
         subscription.setPhoto(photo);
+        subscription.setScreen_name(screen_name);
         return subscription;
     }
 }

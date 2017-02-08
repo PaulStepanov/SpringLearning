@@ -15,7 +15,7 @@ import org.springframework.web.servlet.resource.PathResourceResolver;
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/").setCachePeriod(3600)
+        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/").setCachePeriod(3600)
                 .resourceChain(true)
                 .addResolver(new PathResourceResolver());
     }

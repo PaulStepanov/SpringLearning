@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Vk stuff</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/resources/css/indexstyle.css}"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2 com_block" th:each="subscription :${subscriptions}">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img th:src="${subscription.getPhoto()}" alt="User photo"/>
+                    </div>
+                    <div class="col-md-6 " style="min-height: 200px">
+                        <div class="row">
+                            <p>Name:<a th:href="@{'https://vk.com/'+ ${subscription.getScreen_name()} }" th:text="${subscription.getName()}"></a></p>
+                            <p>ID:<span th:text="${subscription.getId()}"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<table>-->
+<!--<tr th:each="subscription :${subscriptions}">-->
+<!--<td th:text="${subscription.getId()}"></td>-->
+<!--<td th:text="${subscription.getName()}"></td>-->
+<!--<td th:text="${subscription.getPhoto()}"></td>-->
+<!--</tr>-->
+<!--</table>-->
+
+<script rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+</body>
+</html>

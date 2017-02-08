@@ -14,7 +14,6 @@ public class IndexController {
     public SubscritionManager subscritionManager;
     @RequestMapping("/")
     public String index(ModelMap modelMap) {
-        modelMap.put("subscriptions",subscritionManager.getSubscritionsByID("83973489",20));
         return "index";
     }
 }

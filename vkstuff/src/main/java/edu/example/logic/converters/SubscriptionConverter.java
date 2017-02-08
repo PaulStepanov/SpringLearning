@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import edu.example.domain.Subscription;
-import edu.example.domain.builders.SubscriptionBuilder;
+import edu.example.domain.biulders.SubscriptionBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
@@ -26,9 +26,10 @@ public class SubscriptionConverter {
             for (JsonNode node : arrayNode) {
                 subscriptions.add(
                         SubscriptionBuilder.aSubscription()
-                                .id(node.path("gid").asText())
-                                .name(node.path("name").asText())
-                                .photo(node.path("photo").asText())
+                                .withId(node.path("gid").asText())
+                                .withName(node.path("name").asText())
+                                .withPhoto(node.path("photo_big").asText())
+                                .withScreen_name(node.path("screen_name").asText())
                                 .build());
             }
         }
