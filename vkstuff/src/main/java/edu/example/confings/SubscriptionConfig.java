@@ -1,5 +1,6 @@
 package edu.example.confings;
 
+import edu.example.logic.SubscritionAPIManager;
 import edu.example.logic.SubscritionManager;
 import edu.example.logic.converters.SubscriptionConverter;
 import org.springframework.context.annotation.Bean;
@@ -20,6 +21,6 @@ public class SubscriptionConfig {
     @Bean
     @Scope("singleton")
     public SubscritionManager subscriptionBuilder(){
-        return new SubscritionManager();
+        return new SubscritionAPIManager();
     }
 }

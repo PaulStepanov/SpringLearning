@@ -1,6 +1,6 @@
 package edu.example.controlers;
 
-import edu.example.logic.SubscritionManager;
+import edu.example.logic.SubscritionAPIManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping(value = "/subscriptions",method = RequestMethod.GET)
 public class SubscriptionsController {
     @Autowired
-    public SubscritionManager subscritionManager;
+    public SubscritionAPIManager subscritionAPIManager;
 
     @RequestMapping("/get")
     public String index(@RequestParam(name = "id") String id,
                         @RequestParam(name = "count",required = false,defaultValue = "20") Integer count,
                         ModelMap modelMap) {
-        modelMap.put("subscriptions",subscritionManager.getSubscritionsByID(id,count));
+        modelMap.put("subscriptions", subscritionAPIManager.getSubscritionsByID(id,count));
         return "comunities";
     }
 }
