@@ -11,11 +11,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan
 public class MainApp {
-    public static void main(String...args) {
+    public static void main(String... args) {
         SpringApplication.run(MainApp.class, args);
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext();
-        context.getEnvironment().setActiveProfiles("dev","test");
+        context.getEnvironment().setActiveProfiles("dev", "test");
         context.register(WebMvcConfig.class);
     }
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping(value = "/subscriptions",method = RequestMethod.GET)
+@RequestMapping(value = "/subscriptions", method = RequestMethod.GET)
 public class SubscriptionsController {
     @Autowired
     public SubscritionManager subscritionManager;
@@ -20,11 +20,11 @@ public class SubscriptionsController {
 
     @RequestMapping("/get")
     public String index(@RequestParam(name = "id") String id,
-                        @RequestParam(name = "count",required = false,defaultValue = "20") Integer count,
+                        @RequestParam(name = "count", required = false, defaultValue = "20") Integer count,
                         ModelMap modelMap) {
-        id=userIDValidator.validateID(id);
-        if (id!=null) {
-            modelMap.put("subscriptions", subscritionManager.getSubscritionsByID(id,count));
+        id = userIDValidator.validateID(id);
+        if (id != null) {
+            modelMap.put("subscriptions", subscritionManager.getSubscritionsByID(id, count));
             return "comunities";
         } else {
             return "error";

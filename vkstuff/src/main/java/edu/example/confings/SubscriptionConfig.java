@@ -17,21 +17,20 @@ public class SubscriptionConfig {
 
     @Bean
     @Scope("singleton")
-    public SubscriptionConverter subscriptionConverter(){
+    public SubscriptionConverter subscriptionConverter() {
         return new SubscriptionConverter();
     }
 
     @Bean
     @Primary
     @Scope("singleton")
-    public SubscritionManager subscriptionManager(){
+    public SubscritionManager subscriptionManager() {
         return new APISubscritionManager();
     }
 
     @Bean
     @Scope("singleton")
-    public UserIDValidator userIDValidator(){
+    public UserIDValidator userIDValidator() {
         return new APIUserIDValidator();
     }
-
 }

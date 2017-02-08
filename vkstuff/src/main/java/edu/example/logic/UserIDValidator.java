@@ -1,9 +1,8 @@
 package edu.example.logic;
 
-import org.springframework.stereotype.Component;
+        import org.springframework.stereotype.Component;
 
 @Component
 public interface UserIDValidator {
-    public String validateID(String id);
-
+    String validateID(String id);
 }
