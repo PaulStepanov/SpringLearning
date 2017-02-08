@@ -1,6 +1,5 @@
 package edu.example.confings;
 
-import edu.example.domain.builders.SubscriptionBuilder;
 import edu.example.logic.SubscritionManager;
 import edu.example.logic.converters.SubscriptionConverter;
 import org.springframework.context.annotation.Bean;
