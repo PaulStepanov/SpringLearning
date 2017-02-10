@@ -1,6 +1,6 @@
-package edu.example.controlers;
+package vkstuff.controlers;
 
-import edu.example.logic.SubscritionManager;
+import vkstuff.logic.SubscritionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

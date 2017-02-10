@@ -1,4 +1,4 @@
-package edu.example.logic;
+package vkstuff.logic;
 
 import org.junit.Test;
 

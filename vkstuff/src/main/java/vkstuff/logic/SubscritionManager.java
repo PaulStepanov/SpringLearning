@@ -1,6 +1,6 @@
-package edu.example.logic;
+package vkstuff.logic;
 
-import edu.example.domain.Subscription;
+import vkstuff.domain.Subscription;
 
 import java.util.ArrayList;
 

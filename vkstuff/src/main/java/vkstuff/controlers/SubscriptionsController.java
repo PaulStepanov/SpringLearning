@@ -1,7 +1,7 @@
-package edu.example.controlers;
+package vkstuff.controlers;
 
-import edu.example.logic.SubscritionManager;
-import edu.example.logic.UserIDValidator;
+import vkstuff.logic.SubscritionManager;
+import vkstuff.logic.UserIDValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

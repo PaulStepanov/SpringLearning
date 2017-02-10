@@ -1,11 +1,11 @@
-package edu.example.logic.converters;
+package vkstuff.logic.converters;
 
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import edu.example.domain.Subscription;
-import edu.example.domain.biulders.SubscriptionBuilder;
+import vkstuff.domain.Subscription;
+import vkstuff.domain.biulders.SubscriptionBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 

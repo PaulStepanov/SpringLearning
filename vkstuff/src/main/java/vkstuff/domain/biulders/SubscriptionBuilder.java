@@ -1,6 +1,6 @@
-package edu.example.domain.biulders;
+package vkstuff.domain.biulders;
 
-import edu.example.domain.Subscription;
+import vkstuff.domain.Subscription;
 
 public final class SubscriptionBuilder {
     private String id;

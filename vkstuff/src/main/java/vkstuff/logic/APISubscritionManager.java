@@ -1,7 +1,7 @@
-package edu.example.logic;
+package vkstuff.logic;
 
-import edu.example.domain.Subscription;
-import edu.example.logic.converters.SubscriptionConverter;
+import vkstuff.domain.Subscription;
+import vkstuff.logic.converters.SubscriptionConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;

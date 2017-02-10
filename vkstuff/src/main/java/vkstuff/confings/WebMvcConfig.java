@@ -1,4 +1,4 @@
-package edu.example.confings;
+package vkstuff.confings;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

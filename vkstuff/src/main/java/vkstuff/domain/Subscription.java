@@ -1,4 +1,4 @@
-package edu.example.domain;
+package vkstuff.domain;
 
 public class Subscription {
     private String id;
