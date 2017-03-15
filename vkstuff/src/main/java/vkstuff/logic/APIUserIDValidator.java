@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.util.regex.Pattern;
  * from url https://vk.com/user or https://vk.com/id82601175 return id(user,82601175),
  * return null if user wasn't found
  */
+@Service
 public class APIUserIDValidator implements UserIDValidator {
 
     private final String userPattern = "(?:https?:\\/\\/)?(?:www\\.)?vk\\.com\\/(.*)\\/?";

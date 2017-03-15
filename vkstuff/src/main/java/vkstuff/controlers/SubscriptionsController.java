@@ -1,5 +1,7 @@
 package vkstuff.controlers;
 
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import vkstuff.logic.SubscritionManager;
 import vkstuff.logic.UserIDValidator;
 import org.springframework.beans.factory.annotation.Autowired;
